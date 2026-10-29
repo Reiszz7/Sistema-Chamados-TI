@@ -1,36 +1,6 @@
-# Sistema de Controle de Chamados de TI
+Sistema de Controle de Chamados de TI
 
 Aplicação de terminal desenvolvida em Java com MySQL para cadastrar, consultar e acompanhar chamados de suporte.
-
-## Requisitos
-
-- Java 17 ou superior;
-- IntelliJ IDEA;
-- MySQL 8 ou MariaDB;
-- Maven, caso o IntelliJ não faça o download das dependências automaticamente.
-
-## Configuração do banco
-
-1. Abra o MySQL Workbench ou o terminal do Laragon.
-2. Execute todo o arquivo `sql/chamados.sql`.
-3. Na raiz do projeto, faça uma cópia de `database.properties.example` com o nome `database.properties`.
-4. Confira usuário, senha e porta do MySQL. Para o Laragon padrão:
-
-```properties
-db.url=jdbc:mysql://localhost:3306/chamados_ti?serverTimezone=America/Sao_Paulo&useSSL=false&allowPublicKeyRetrieval=true
-db.user=root
-db.password=
-```
-
-O arquivo `database.properties` não deve ser enviado ao GitHub, pois está no `.gitignore`.
-
-## Execução no IntelliJ
-
-1. Abra a pasta `Sistema-Chamados-TI` como projeto Maven.
-2. Aguarde o IntelliJ carregar o `pom.xml` e baixar o conector do MySQL.
-3. Abra `src/main/java/br/com/senai/chamados/Main.java`.
-4. Execute pelo botão verde ao lado do método `main`.
-5. Use o menu do terminal para cadastrar e consultar chamados.
 
 ## Regras implementadas
 
